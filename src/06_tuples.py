@@ -12,15 +12,20 @@ Additionally, your code will be safer if you opt to "write-protect"
 data that does not need to be changed. Tuples enforce immutability
 automatically.
 """
-
+#really close to arrays but once you put something in it it stays that way
+#cannot be modified! 
 # Example:
-
+#imported math 
 import math
 
 def dist(a, b):
     """Compute the distance between two x,y points."""
     x0, y0 = a  # Destructuring assignment
     x1, y1 = b
+
+    # x0 = a[0]
+    # y0 = a[1]
+
 
     return math.sqrt((x1 - x0)**2 + (y1 - y0)**2)
 
@@ -31,14 +36,18 @@ b = (-14, 72)
 print("Distance is: {:.2f}".format(dist(a, b)))
 
 
-
 # Write a function `print_tuple` that prints all the values in a tuple
 
 # YOUR CODE HERE
 
+#Prints 1 2 5 7 99, one per line
+def print_tuple(tup):  
+    for num in tup:
+        print(num)
+        
 t = (1, 2, 5, 7, 99)
-print_tuple(t)  # Prints 1 2 5 7 99, one per line
+print_tuple(t)
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+u = (1,)  # What needs to be added to make this work?
 print_tuple(u)
