@@ -6,6 +6,9 @@ the list should be populated.
 
 Take a look at https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions
 for more info regarding list comprehensions.
+
+building a list out of things- creating a list
+do not use to manipulate or add to a list 
 """
 
 # Write a list comprehension to produce the array [1, 2, 3, 4, 5]
@@ -32,5 +35,5 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
-y = [i for i in x if int(i) %2 == 0]
+y = [num for num in x if int(i) %2 == 0]
 print(y)

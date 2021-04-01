@@ -14,6 +14,10 @@ has the following keys:
  - lon: a signed integer representing a longitude value
  - name: a name string for this location
 """
+#two ways to make an empty dictionary
+dictionary = {}
+dic2 = dict()
+
 
 waypoints = [
     {

@@ -18,8 +18,8 @@ print(f1(1,2))
 
 def f2(*anynumbers):
     answer = 0 
-    for x in anynumbers: 
-        answer += x
+    for num in anynumbers: 
+        answer += num
     return answer
 
 print(f2(1))                    # Should print 1

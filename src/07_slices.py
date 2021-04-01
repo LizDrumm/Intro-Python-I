@@ -7,6 +7,7 @@ This Stack Overflow answer provides a brief but thorough
 overview: https://stackoverflow.com/a/509295
 
 Use Python's slice syntax to achieve the following:
+slice- first value is inclusive, second is not 
 """
 
 a = [2, 4, 1, 7, 9, 6]
@@ -18,7 +19,7 @@ print(a[1])
 print(a[-2])
 
 # Output the last three elements in the array: [7, 9, 6]
-print([a[-3:]])
+print(a[-3:])
 
 # Output the two middle elements in the array: [1, 7]
 print(a[2:4])
